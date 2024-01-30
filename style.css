@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #2f3542;
+    padding: 15px;
+}
+
+h1{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.slider{
+    position: relative;
+    overflow: hidden;
+    height: 25rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.bottom-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* margin: 0 auto; */
+    padding: 0px 20px;
+}
+
+.bottom-container button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffa502;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    /* margin: 0 auto; */
+}
+.dots-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.dots-container .dot{
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dots-container .dot.active{
+   
+    background-color: #000;
+    
+}
+
+#count, button{
+    padding: 10px 5px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    
+}
+button{
+    cursor: pointer;
+}
